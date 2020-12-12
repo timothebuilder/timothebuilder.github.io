@@ -1,0 +1,89 @@
+@import  url(https://fonts.googleapis.com/css?family=Bebas+Neue);
+@import  url(https://fonts.googleapis.com/css?family=Roboto);
+
+:root {
+  --mainColor: #2d3142;
+  --firstColor: #f6b93b;
+  --secondColor: #9933ff;
+  --thirdColor: #20bf6b;
+}
+
+body {
+  background-color: #444444;
+  text-align: center;
+  font-family: Roboto;
+}
+
+.title {
+  font-family: Bebas Neue;
+  margin: 2rem;
+}
+
+.playlist {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.card {
+  background: #f0f0f0;
+  border-radius: 15px;
+  display: inline-block;
+  height: auto;
+  margin: 1rem;
+  position: relative;
+  width: 400px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+
+.vignette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+.title {
+  padding-top: 40px;
+  height: 80px;
+  font-size: 36px;
+  color: #aaaaaa;
+  margin-bottom: 1rem;
+}
+
+.zoom {
+  filter: contrast(90%);
+  transition: all 0.5s ease 0s;
+}
+
+.zoom:hover {
+  transform: scale(1.02) translate(0px, -2px);
+  filter: contrast(100%);
+}
+
+.container h4{
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+
+.socialmedia {
+    position: relative;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.icon {
+    display: inline-block;
+    padding: 2px;
+    height: auto;
+    width: 50px;
+}
